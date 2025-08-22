@@ -143,7 +143,16 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#top" aria-label="DnK Financial Services"><img src="assets/dnk-logo.png" alt="DnK Financial Services" style="height:46px;width:auto;display:block" /></a>
-      <a class="cta-sm" href="https://app.ethoslife.com/partner/5d9e7/q/goals" target="_blank" rel="noopener" aria-label="Start your free quote">Get Free Quote</a>
+      <a class="cta-sm" href="https://app.ethoslife.com/partner/5d9e7/q/goals"  target="_blank" rel="noopener" aria-label="Start your free quote">Get Free Quote</a>
+        <button id="submitButton">Lead</button>
+        <script type="text/javascript">
+          document.getElementById('submitButton').addEventListener('click', function() {
+            fbq('track', 'Lead', {
+              value: 10,
+              currency: 'usd',
+            });
+          }, false);
+        </script>
     </div>
   </header>
 
@@ -159,6 +168,15 @@
             <path d="M5 12h12M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           Get Your Free Quote Online
+        <button id="submitButton">Lead</button>
+        <script type="text/javascript">
+          document.getElementById('submitButton').addEventListener('click', function() {
+            fbq('track', 'Lead', {
+              value: 10,
+              currency: 'usd',
+            });
+          }, false);
+        </script>
         </a>
         <div class="mini">You’ll be taken to our trusted partner to securely complete your quote.</div>
         <div class="proof">
